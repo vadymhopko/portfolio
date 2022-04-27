@@ -1,0 +1,213 @@
+@media only screen and (max-width: 1520px) {
+  .section-practice-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-practice-cards {
+    margin-right: 0;
+    margin-top: 26px;
+  }
+  .section-practice-image {
+    align-self: initial;
+  }
+  .section-breathe-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-breathe .breathe-content-image {
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .section-meditation-image {
+    display: none;
+  }
+  .section-meditation-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-meditation-list:first-of-type {
+    margin-bottom: 100px;
+  }
+  .section-meditation-item {
+    padding: 25px 35px;
+    text-align: center;
+    &.item-modify {
+      padding: 25px 35px;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .header-nav-item:not(:last-child) {
+    margin-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 1371px) {
+  .section-info .container {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .header-nav-item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .header-nav-item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .header-nav-link {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body::-webkit-scrollbar {
+    width: 0;
+  }
+  .hamburger {
+    display: flex;
+    align-items: center;
+    z-index: 600;
+  }
+  .header {
+    padding: 0;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .header-logo {
+    display: none;
+  }
+  .header-nav {
+    display: grid;
+    place-content: center;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #1c7f71;
+    z-index: 500;
+    overflow: auto;
+    transition: transform 0.45s ease;
+    &.show {
+      transform: translateY(100%);
+    }
+    &-list {
+      flex-direction: column;
+      gap: 20px;
+    }
+    &-item:not(:last-child) {
+      margin-right: 0;
+    }
+    &-link {
+      font-size: 28px;
+      &:before {
+        content: none;
+      }
+      &:hover {
+        color: #000;
+        font-size: 32px;
+        font-weight: 500;
+      }
+    }
+  }
+  .section-transform-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    &:last-child .section-transform-box:first-child {
+      order: 2;
+    }
+  }
+  .section-transform-box.box-modify {
+    align-self: initial;
+    margin-right: 0;
+  }
+  .section-info .info-box-pic_bg {
+    display: none !important;
+    position: initial;
+  }
+  .section-info-box {
+    padding: 50px 48px 50px 48px;
+    border-radius: 20px;
+    background: white;
+    max-height: initial;
+    width: 100%;
+    box-shadow: 0px 19px 50px 0px #1a7f7226;
+  }
+  .footer {
+    padding: 160px 0 30px 0;
+    margin-bottom: 0 !important;
+  }
+  .footer-nav-list {
+    flex-direction: column;
+  }
+  .footer-nav-item:not(:last-child) {
+    margin-right: 0;
+  }
+  .footer-nav-link::before {
+    content: none;
+  }
+  .footer-socials-link {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-transform .transform-image-block {
+    display: none;
+  }
+  .section-practice-card:hover .practice-card-background,
+  .section-practice-card:hover .practice-card-arrow_svg {
+    display: none;
+  }
+  .section-practice .practice-card-title {
+    font-size: clamp(26px, 6vw, 32px);
+    line-height: clamp(28px, 7vw, 47px);
+  }
+  .section-practice .practice-card-text {
+    font-size: clamp(16px, 4vw, 24px);
+    line-height: clamp(25px, 5vw, 31px);
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .section-practice-cards {
+    margin-top: 0;
+  }
+  .section-practice-card {
+    max-width: 100%;
+    min-width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .section-breathe-item {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+  }
+  .section-breathe-list {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .section-practice-card {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}

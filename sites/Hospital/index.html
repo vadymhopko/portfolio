@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Домашка</title>
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/aos.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="prePreloader"></div>
+    </div>
+    <!--============ HEADER ============-->
+
+    <header class="header">
+      <div class="header-topbar">
+        <div class="container">
+          <a href="#" class="header-logo">BrandName</a>
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Home</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Product</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Pricing</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#" class="header-nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="header-link" id="link_effect"
+            ><span class="header-link-effect">Get Quote Now</span>
+          </a>
+
+          <div class="header-mobile-menu">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="header-mobile-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M17.1901 15.478L23.6458 21.9337C23.8727 22.1608 24.0001 22.4687 24 22.7897C23.9999 23.1107 23.8723 23.4185 23.6452 23.6455C23.4181 23.8724 23.1102 23.9998 22.7892 23.9997C22.4682 23.9995 22.1604 23.8719 21.9335 23.6448L15.4778 17.1892C13.5479 18.6839 11.1211 19.3873 8.69104 19.1563C6.26097 18.9253 4.01018 17.7772 2.39656 15.9455C0.782936 14.1139 -0.0723147 11.7364 0.00479537 9.29657C0.0819054 6.85677 1.08558 4.53797 2.81165 2.8119C4.53771 1.08584 6.85651 0.082161 9.29632 0.00505095C11.7361 -0.0720591 14.1137 0.783191 15.9453 2.39682C17.7769 4.01044 18.925 6.26123 19.156 8.6913C19.387 11.1214 18.6836 13.5482 17.1889 15.478H17.1901ZM9.60045 16.7992C11.5099 16.7992 13.3412 16.0406 14.6914 14.6904C16.0416 13.3402 16.8001 11.509 16.8001 9.5995C16.8001 7.69003 16.0416 5.85877 14.6914 4.50857C13.3412 3.15837 11.5099 2.39984 9.60045 2.39984C7.69098 2.39984 5.85971 3.15837 4.50951 4.50857C3.15932 5.85877 2.40078 7.69003 2.40078 9.5995C2.40078 11.509 3.15932 13.3402 4.50951 14.6904C5.85971 16.0406 7.69098 16.7992 9.60045 16.7992Z"
+                fill="#737373"
+              />
+            </svg>
+            <svg
+              width="24"
+              height="18"
+              viewBox="0 0 24 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="header-mobile-icon"
+            >
+              <path
+                d="M22.4 4.00016H4.656L4 0.640163C3.9626 0.456742 3.86206 0.292245 3.71589 0.175305C3.56971 0.0583653 3.38716 -0.00361159 3.2 0.000162751H0V1.60016H2.544L5.6 16.9602C5.6374 17.1436 5.73794 17.3081 5.88411 17.425C6.03029 17.542 6.21284 17.6039 6.4 17.6002H20.8V16.0002H7.056L6.4 12.8002H20.8C20.9849 12.8047 21.1657 12.745 21.3116 12.6312C21.4574 12.5174 21.5594 12.3566 21.6 12.1762L23.2 4.97616C23.2268 4.85746 23.2262 4.73421 23.1982 4.61579C23.1702 4.49737 23.1155 4.38689 23.0384 4.29278C22.9612 4.19867 22.8636 4.12339 22.753 4.07268C22.6424 4.02198 22.5217 3.99717 22.4 4.00016ZM20.16 11.2002H6.096L4.976 5.60016H21.4L20.16 11.2002Z"
+                fill="#737373"
+              />
+            </svg>
+            <svg
+              width="24"
+              height="14"
+              viewBox="0 0 24 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="header-mobile-burger"
+            >
+              <path
+                class="svg_burger"
+                d="M0.571472 0H23.4286V2.28571H0.571472V0ZM6.28576 5.71429H23.4286V8H6.28576V5.71429ZM13.4286 11.4286H23.4286V13.7143H13.4286V11.4286Z"
+                fill="#737373"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!--============ SECTION HERO ============-->
+
+      <section class="section-hero">
+        <div class="container">
+          <div class="section-hero-content">
+            <p class="section-hero-caption">Meet the Best Hospital</p>
+            <p class="section-hero-text">
+              We know how large objects will act, but things on a small scale.
+            </p>
+            <a href="#" class="section-hero-link" id="link_effect2">
+              <span class="section-hero-effect2">Get Quote Now</span>
+            </a>
+            <a href="#" class="section-hero-link info" id="link_effect3">
+              <span class="section-hero-effect3">Learn More</span>
+            </a>
+          </div>
+          <form action="#" method="POST" class="appointment-form">
+            <header class="appointment-form-header">
+              <h2 class="appointment-form-title">Book Appointment</h2>
+            </header>
+            <div class="appointment-form-body">
+              <div class="appointment-form-field">
+                <label for="name" class="appointment-form-label name"
+                  >Name *</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Full Name *"
+                  class="appointment-form-input"
+                />
+              </div>
+              <div class="appointment-form-field">
+                <label for="email" class="appointment-form-label"
+                  >Email address *</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@gmail.com"
+                  class="appointment-form-input"
+                />
+              </div>
+              <div class="appointment-form-field">
+                <label for="departement" class="appointment-form-label"
+                  >Departement *</label
+                >
+                <select
+                  name="departement"
+                  id="departement"
+                  class="appointment-form-input select"
+                >
+                  <option value disabled selected>Please Select</option>
+                  <option value="">Сenter of medicine 1</option>
+                  <option value="">Сenter of medicine 2</option>
+                  <option value="">Сenter of medicine 3</option>
+                  <option value="">Сenter of medicine 4</option>
+                </select>
+              </div>
+              <div class="appointment-form-field">
+                <label for="time" class="appointment-form-label">Time *</label>
+                <select
+                  name="time"
+                  id="time"
+                  class="appointment-form-input select"
+                >
+                  <option value="">4:00 Available</option>
+                  <option value="">6:00 Available</option>
+                  <option value="">8:00 Available</option>
+                  <option value="">10:00 Available</option>
+                </select>
+              </div>
+            </div>
+            <div class="appointment-form-footer">
+              <button type="submit" class="btn-primary" id="link_effect4">
+                <span class="btn-primary-effect4">Book Appointment</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </header>
+
+    <!--============ SECTION LEADING FIRST ============-->
+
+    <main>
+      <section class="section-leading-first">
+        <div class="container">
+          <header
+            class="section-leading-first_header"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <h2 class="section-leading-title">Leading Medicine</h2>
+            <p class="section-leading-text">
+              Problems trying to resolve the conflict between
+              <br class="first-br" />
+              the two major realms of Classical physics: Newtonian mechanics
+            </p>
+          </header>
+          <div class="section-leading-first-content">
+            <div
+              class="section-leading-first__card"
+              data-aos="flip-left"
+              data-aos-duration="1300"
+            >
+              <div class="section-leading-first__box">
+                <picture class="circle-image-box">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/mobile-circle.svg"
+                  />
+                  <img
+                    src="images/circle.svg"
+                    alt="Circle"
+                    class="circle-image"
+                  />
+                </picture>
+                <h3 class="section-leading-first_title">Emergency Case</h3>
+              </div>
+              <div class="section-leading-first__list">
+                <ul class="leading-first-list">
+                  <li class="leading-first-item">
+                    - The best products start with Figma
+                  </li>
+                  <li class="leading-first-item">- Design with real data</li>
+                  <li class="leading-first-item">
+                    - Lightning fast prototyping
+                  </li>
+                  <li class="leading-first-item">- Fastest way to organize</li>
+                  <li class="leading-first-item">
+                    - Work at the speed of thought.
+                  </li>
+                </ul>
+                <a href="#" class="leading-first-link">Learn More</a>
+              </div>
+            </div>
+            <div
+              class="section-leading-first__card"
+              data-aos="flip-left"
+              data-aos-duration="1400"
+            >
+              <div class="section-leading-first__box modify_box_one">
+                <picture class="circle-image-box">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/mobile-circle.svg"
+                  />
+                  <img
+                    src="images/circle.svg"
+                    alt="Circle"
+                    class="circle-image"
+                  />
+                </picture>
+                <h3 class="section-leading-first_title">Cancer Care</h3>
+              </div>
+              <div class="section-leading-first__list">
+                <ul class="leading-first-list">
+                  <li class="leading-first-item">
+                    - The best products start with Figma
+                  </li>
+                  <li class="leading-first-item">- Design with real data</li>
+                  <li class="leading-first-item">
+                    - Lightning fast prototyping
+                  </li>
+                  <li class="leading-first-item">- Fastest way to organize</li>
+                  <li class="leading-first-item">
+                    - Work at the speed of thought.
+                  </li>
+                </ul>
+                <a href="#" class="leading-first-link">Learn More</a>
+              </div>
+            </div>
+            <div
+              class="section-leading-first__card"
+              data-aos="flip-left"
+              data-aos-duration="1500"
+            >
+              <div class="section-leading-first__box modify_box_two">
+                <picture class="circle-image-box">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/mobile-circle.svg"
+                  />
+                  <img
+                    src="images/circle.svg"
+                    alt="Circle"
+                    class="circle-image"
+                  />
+                </picture>
+                <h3 class="section-leading-first_title">Health Queries</h3>
+              </div>
+              <div class="section-leading-first__list">
+                <ul class="leading-first-list">
+                  <li class="leading-first-item">
+                    - The best products start with Figma
+                  </li>
+                  <li class="leading-first-item">- Design with real data</li>
+                  <li class="leading-first-item">
+                    - Lightning fast prototyping
+                  </li>
+                  <li class="leading-first-item">- Fastest way to organize</li>
+                  <li class="leading-first-item">
+                    - Work at the speed of thought.
+                  </li>
+                </ul>
+                <a href="#" class="leading-first-link">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--============ SECTION LEADING SECOND ============-->
+
+      <section class="section-leading-first modify_value">
+        <div class="container">
+          <header
+            class="section-leading-first_header modify_margin"
+            data-aos="fade-down"
+            data-aos-duration="1200"
+          >
+            <h2 class="section-leading-title">
+              <span class="section-leading-mobile-title1">
+                Leading Medicine
+              </span>
+              <span class="section-leading-mobile-title2">
+                What <br class="second-br" />
+                Clients Say
+              </span>
+            </h2>
+            <p class="section-leading-text">
+              Problems trying to resolve the conflict between
+              <br class="first-br" />
+              the two major realms of Classical physics: Newtonian mechanics
+            </p>
+          </header>
+          <div class="section-leading-second-content">
+            <div
+              class="section-leading-second__card"
+              data-aos="flip-left"
+              data-aos-duration="1300"
+            >
+              <div class="section-leading-second__stars">
+                <img src="images/full-star.svg" alt="Star" class="card-star" />
+                <img src="images/full-star.svg" alt="Star" class="card-star" />
+                <img src="images/full-star.svg" alt="Star" class="card-star" />
+                <img src="images/full-star.svg" alt="Star" class="card-star" />
+                <img src="images/empty-star.svg" alt="Star" class="card-star" />
+              </div>
+              <p class="section-leading-second__text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+              <div class="section-leading-second__avatar">
+                <img
+                  src="images/avatar1.png"
+                  alt="Avatar"
+                  class="card-avatar"
+                />
+              </div>
+            </div>
+            <div
+              class="section-leading-second__card"
+              data-aos="flip-left"
+              data-aos-duration="1400"
+            >
+              <div class="section-leading-second__stars">
+                <img src="images/full-star.svg" alt="Star" class="card-star" />
+                <img src="images/full-star.svg" alt="Star" class="card-star" />
+                <img src="images/full-star.svg" alt="Star" class="card-star" />
+                <img src="images/full-star.svg" alt="Star" class="card-star" />
+                <img src="images/empty-star.svg" alt="Star" class="card-star" />
+              </div>
+              <p class="section-leading-second__text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+              <div class="section-leading-second__avatar">
+                <img
+                  src="images/avatar2.png"
+                  alt="Avatar"
+                  class="card-avatar"
+                />
+              </div>
+            </div>
+            <div
+              class="section-leading-second__card"
+              data-aos="flip-left"
+              data-aos-duration="1500"
+            >
+              <div class="section-leading-second__stars">
+                <img src="images/full-star.svg" alt="Star" class="card-star" />
+                <img src="images/full-star.svg" alt="Star" class="card-star" />
+                <img src="images/full-star.svg" alt="Star" class="card-star" />
+                <img src="images/full-star.svg" alt="Star" class="card-star" />
+                <img src="images/empty-star.svg" alt="Star" class="card-star" />
+              </div>
+              <p class="section-leading-second__text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+              <div class="section-leading-second__avatar">
+                <img
+                  src="images/avatar3.png"
+                  alt="Avatar"
+                  class="card-avatar"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--============ SECTION FAQ ============-->
+
+      <section class="section-faq">
+        <div class="container">
+          <header class="section-faq-header">
+            <h2 class="section-faq-title">FAQ</h2>
+            <p class="section-faq-text">
+              Problems trying to resolve the conflict between
+              <br class="first-br" />
+              the two major realms of Classical physics: Newtonian mechanics
+            </p>
+          </header>
+          <div class="section-faq-content">
+            <div class="section-faq-row">
+              <div class="section-faq-box">
+                <p class="section-faq-box-caption">
+                  the quick fox jumps over the lazy dog
+                </p>
+                <p class="section-faq-box-text">
+                  Things on a very small scale behave like nothing
+                </p>
+              </div>
+              <div class="section-faq-box">
+                <p class="section-faq-box-caption">
+                  the quick fox jumps over the lazy dog
+                </p>
+                <p class="section-faq-box-text">
+                  Things on a very small scale behave like nothing
+                </p>
+              </div>
+              <div class="section-faq-box">
+                <p class="section-faq-box-caption">
+                  the quick fox jumps over the lazy dog
+                </p>
+                <p class="section-faq-box-text">
+                  Things on a very small scale behave like nothing
+                </p>
+              </div>
+            </div>
+            <div class="section-faq-row">
+              <div class="section-faq-box">
+                <p class="section-faq-box-caption">
+                  the quick fox jumps over the lazy dog
+                </p>
+                <p class="section-faq-box-text">
+                  Things on a very small scale behave like nothing
+                </p>
+              </div>
+              <div class="section-faq-box">
+                <p class="section-faq-box-caption">
+                  the quick fox jumps over the lazy dog
+                </p>
+                <p class="section-faq-box-text">
+                  Things on a very small scale behave like nothing
+                </p>
+              </div>
+              <div class="section-faq-box">
+                <p class="section-faq-box-caption">
+                  the quick fox jumps over the lazy dog
+                </p>
+                <p class="section-faq-box-text">
+                  Things on a very small scale behave like nothing
+                </p>
+              </div>
+            </div>
+            <div class="section-faq-row">
+              <div class="section-faq-box">
+                <p class="section-faq-box-caption">
+                  the quick fox jumps over the lazy dog
+                </p>
+                <p class="section-faq-box-text">
+                  Things on a very small scale behave like nothing
+                </p>
+              </div>
+              <div class="section-faq-box">
+                <p class="section-faq-box-caption">
+                  the quick fox jumps over the lazy dog
+                </p>
+                <p class="section-faq-box-text">
+                  Things on a very small scale behave like nothing
+                </p>
+              </div>
+              <div class="section-faq-box">
+                <p class="section-faq-box-caption">
+                  the quick fox jumps over the lazy dog
+                </p>
+                <p class="section-faq-box-text">
+                  Things on a very small scale behave like nothing
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--============ SECTION PRICING ============-->
+
+      <section class="section-pricing">
+        <div class="container">
+          <header class="section-pricing-header">
+            <h2 class="section-pricing-title">Pricing</h2>
+            <p class="section-pricing-text">
+              Problems trying to resolve the conflict between
+              <br class="first-br" />
+              the two major realms of Classical physics: Newtonian mechanics
+            </p>
+          </header>
+          <div class="section-pricing-cards">
+            <div class="section-pricing-card">
+              <h3 class="card-free-title">FREE</h3>
+              <p class="card-free-text">
+                Organize across all <br />
+                apps by hand
+              </p>
+              <div class="card-free-price">
+                <span class="pricing">0</span>
+                <span class="pricing-text">Per Month</span>
+              </div>
+              <ul class="card-free-list">
+                <li class="card-free-item">
+                  <img
+                    src="images/circle-on.svg"
+                    alt="#"
+                    class="card-free-circle"
+                  />Unlimited product updates
+                </li>
+                <li class="card-free-item">
+                  <img
+                    src="images/circle-on.svg"
+                    alt="#"
+                    class="card-free-circle"
+                  />Unlimited product updates
+                </li>
+                <li class="card-free-item">
+                  <img
+                    src="images/circle-on.svg"
+                    alt="#"
+                    class="card-free-circle"
+                  />Unlimited product updates
+                </li>
+                <li class="card-free-item">
+                  <img
+                    src="images/circle-off.svg"
+                    alt="#"
+                    class="card-free-circle"
+                  />1GB Cloud storage
+                </li>
+                <li class="card-free-item">
+                  <img
+                    src="images/circle-off.svg"
+                    alt="#"
+                    class="card-free-circle"
+                  />Email and community support
+                </li>
+              </ul>
+              <a href="#" class="card-free-btn-link" id="link_effect5">
+                <span class="card-free-effect">Try for free</span>
+              </a>
+            </div>
+            <div class="section-pricing-card standard">
+              <h3 class="card-free-title standard-color">STANDARD</h3>
+              <p class="card-free-text standard-color">
+                Organize across all <br />
+                apps by hand
+              </p>
+              <div class="card-free-price">
+                <span class="pricing">9.99</span>
+                <span class="pricing-text">Per Month</span>
+              </div>
+              <ul class="card-free-list">
+                <li class="card-free-item standard-color">
+                  <img
+                    src="images/circle-on.svg"
+                    alt="#"
+                    class="card-free-circle"
+                  />Unlimited product updates
+                </li>
+                <li class="card-free-item standard-color">
+                  <img
+                    src="images/circle-on.svg"
+                    alt="#"
+                    class="card-free-circle"
+                  />Unlimited product updates
+                </li>
+                <li class="card-free-item standard-color">
+                  <img
+                    src="images/circle-on.svg"
+                    alt="#"
+                    class="card-free-circle"
+                  />Unlimited product updates
+                </li>
+                <li class="card-free-item standard-color">
+                  <img
+                    src="images/circle-off.svg"
+                    alt="#"
+                    class="card-free-circle"
+                  />1GB Cloud storage
+                </li>
+                <li class="card-free-item standard-color">
+                  <img
+                    src="images/circle-off.svg"
+                    alt="#"
+                    class="card-free-circle"
+                  />Email and community support
+                </li>
+              </ul>
+              <a href="#" class="card-free-btn-link" id="link_effect6"
+                ><span class="card-free-effect">Try for free</span></a
+              >
+            </div>
+            <div class="section-pricing-card">
+              <h3 class="card-free-title">PREMIUM</h3>
+              <p class="card-free-text">
+                Organize across all <br />
+                apps by hand
+              </p>
+              <div class="card-free-price">
+                <span class="pricing">19.99</span>
+                <span class="pricing-text">Per Month</span>
+              </div>
+              <ul class="card-free-list">
+                <li class="card-free-item">
+                  <img
+                    src="images/circle-on.svg"
+                    alt="#"
+                    class="card-free-circle"
+                  />Unlimited product updates
+                </li>
+                <li class="card-free-item">
+                  <img
+                    src="images/circle-on.svg"
+                    alt="#"
+                    class="card-free-circle"
+                  />Unlimited product updates
+                </li>
+                <li class="card-free-item">
+                  <img
+                    src="images/circle-on.svg"
+                    alt="#"
+                    class="card-free-circle"
+                  />Unlimited product updates
+                </li>
+                <li class="card-free-item">
+                  <img
+                    src="images/circle-off.svg"
+                    alt="#"
+                    class="card-free-circle"
+                  />1GB Cloud storage
+                </li>
+                <li class="card-free-item">
+                  <img
+                    src="images/circle-off.svg"
+                    alt="#"
+                    class="card-free-circle"
+                  />Email and community support
+                </li>
+              </ul>
+              <a href="#" class="card-free-btn-link" id="link_effect7"
+                ><span class="card-free-effect">Try for free</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--============ SECTION TOUCH ============-->
+
+      <section class="section-touch">
+        <div class="container">
+          <div class="section-touch-content">
+            <p class="section-touch-caption">Get In Touch</p>
+            <p class="section-touch-text">
+              The gradual accumulation of information about atomic and
+              small-scale behaviour during the first quarter of the 20th
+            </p>
+          </div>
+          <p class="section-touch-caption_modify">
+            Subscribe For Latest Newsletter
+          </p>
+          <form action="#" method="POST">
+            <div class="section-touch-field">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                class="section-touch-input"
+              />
+              <button type="submit" class="btn-secondary" id="link_effect8">
+                <span class="btn-secondary-effect">Subscribe</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--============ FOOTER ============-->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-blocks">
+          <div class="block-touch">
+            <h3 class="block-touch-title">Get In Touch</h3>
+            <p class="block-touch-text">
+              the quick fox jumps over the lazy dog
+            </p>
+            <ul class="block-touch-list">
+              <li class="block-touch-item">
+                <a href="#" class="block-touch-link fab fa-facebook"></a>
+              </li>
+              <li class="block-touch-item">
+                <a href="#" class="block-touch-link fab fa-instagram"></a>
+              </li>
+              <li class="block-touch-item">
+                <a href="#" class="block-touch-link fab fa-twitter"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="block-info">
+            <h3 class="block-info-title">Company info</h3>
+            <ul class="block-info-list">
+              <li class="block-info-item">
+                <a href="#" class="block-info-link">About Us</a>
+              </li>
+              <li class="block-info-item">
+                <a href="#" class="block-info-link">Carrier</a>
+              </li>
+              <li class="block-info-item">
+                <a href="#" class="block-info-link">We are hiring</a>
+              </li>
+              <li class="block-info-item">
+                <a href="#" class="block-info-link">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="block-features">
+            <h3 class="block-features-title">Features</h3>
+            <ul class="block-features-list">
+              <li class="block-features-item">
+                <a href="#" class="block-features-link">Business Marketing</a>
+              </li>
+              <li class="block-features-item">
+                <a href="#" class="block-features-link">User Analytic</a>
+              </li>
+              <li class="block-features-item">
+                <a href="#" class="block-features-link">Live Chat</a>
+              </li>
+              <li class="block-features-item">
+                <a href="#" class="block-features-link">Unlimited Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="block-resources">
+            <h3 class="block-resources-title">Resources</h3>
+            <ul class="block-resources-list">
+              <li class="block-resources-item">
+                <a href="#" class="block-resources-link">IOS & Android</a>
+              </li>
+              <li class="block-resources-item">
+                <a href="#" class="block-resources-link">Watch a Demo</a>
+              </li>
+              <li class="block-resources-item">
+                <a href="#" class="block-resources-link">Customers</a>
+              </li>
+              <li class="block-resources-item">
+                <a href="#" class="block-resources-link">API</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p class="footer-copyright-text">
+            Made With Love By Figmaland All Right Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/preloader.js"></script>
+    <script src="scripts/jquery-menu.js"></script>
+    <script src="scripts/jquery-btn.js"></script>
+    <script src="scripts/btn-hover.js"></script>
+    <script src="scripts/aos.js"></script>
+    <script>
+      AOS.init({
+        disable: "phone",
+        once: true,
+      });
+    </script>
+  </body>
+</html>

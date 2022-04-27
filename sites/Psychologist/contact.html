@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Психолог</title>
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style.min.css" />
+  </head>
+  <body>
+    <!--========= HEADER =========-->
+
+    <header class="header">
+      <div class="header-topbar">
+        <div class="container">
+          <a href="index.html">
+            <div class="header-topbar-logo">
+              <img class="topbar-logo-icon" src="images/logo.svg" alt="logo" />
+              <span class="topbar-logo-name"
+                >Психолог <br />
+                Илона Корытко</span
+              >
+            </div>
+          </a>
+          <div class="header-topbar-phone">
+            <i class="topbar-phone-icon fas fa-phone-alt"></i>
+            <a class="topbar-phone-number" href="tel:+79175666173"
+              >+79175666173</a
+            >
+          </div>
+          <div class="header-topbar-location">
+            <i class="topbar-location-icon fas fa-location-arrow"></i>
+            <a
+              class="topbar-location-adress"
+              href="https://goo.gl/maps/weG51JRDqAxhU3bs7"
+              target="_blank"
+              >Москва, Россия</a
+            >
+          </div>
+          <div class="header-topbar-socials">
+            <ul class="topbar-socials-list">
+              <li class="topbar-socials-item">
+                <a
+                  class="topbar-socials-link"
+                  href="https://instagram.com/ilona_psycholog?utm_medium=copy_link"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram-square"></i>
+                </a>
+              </li>
+              <li class="topbar-socials-item">
+                <a
+                  class="topbar-socials-link"
+                  href="https://vk.com/id188651398"
+                  target="_blank"
+                  ><i class="fa-brands fa-vk"></i
+                ></a>
+              </li>
+              <li class="topbar-socials-item">
+                <a
+                  class="topbar-socials-link"
+                  href="https://t.me/+AuRhffBvelFlNjYy"
+                  target="_blank"
+                  ><i class="fa-brands fa-telegram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottombar">
+        <div class="container">
+          <nav class="header-nav" id="nav">
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a class="header-nav-link menu-close" href="index.html"
+                  >Главная</a
+                >
+              </li>
+              <li class="header-nav-item">
+                <a
+                  class="header-nav-link link-down menu-close"
+                  href="index.html#about"
+                  >Обо мне</a
+                >
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="services.html">Услуги</a>
+                <a href="#" class="arrow"
+                  ><i class="fa-solid fa-angle-down"></i
+                ></a>
+                <ul class="header-droplist" id="droplist">
+                  <li class="header-dropitem">
+                    <a
+                      class="header-droplink"
+                      href="pages/services/serviceVip.html"
+                      >Индивидуальные</a
+                    >
+                  </li>
+                  <li class="header-dropitem">
+                    <a
+                      class="header-droplink"
+                      href="pages/services/serviceFamily.html"
+                      >Семейные</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="blog.html">Блог</a>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link menu-close" href="index.html#comments"
+                  >Отзывы</a
+                >
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link menu-close" href="#">Контакты</a>
+              </li>
+            </ul>
+            <button class="btn-primary modify" id="btnPrimary">
+              Консультация
+            </button>
+          </nav>
+          <div class="header-burger-menu" id="menu">
+            <div class="header-burger">
+              <span class="header-burger-line"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <!--========= SECTION HERO =========-->
+
+      <section class="section-blog-hero blog-touch">
+        <div class="container">
+          <h2 class="section-blog-title blog-title-modify modify">Контакты</h2>
+        </div>
+      </section>
+      <!--========= SECTION TOUCH =========-->
+
+      <section class="section-touch">
+        <div class="container">
+          <div class="section-touch-content">
+            <div class="section-touch-box">
+              <h2 class="section-touch-title">Связаться</h2>
+              <ul class="section-touch-list">
+                <li class="section-touch-item">
+                  <a
+                    href="https://goo.gl/maps/weG51JRDqAxhU3bs7"
+                    target="_blank"
+                    class="section-touch-link"
+                  >
+                    <i class="touch-link-icon fas fa-map-marker-alt"></i>
+                    <em class="touch-link-label">Москва, Россия </em>
+                  </a>
+                </li>
+                <li class="section-touch-item">
+                  <a href="tel:+79175666173" class="section-touch-link">
+                    <i class="touch-link-icon fas fa-phone-alt"> </i>
+                    <em class="touch-link-label">+79175666173</em>
+                  </a>
+                </li>
+                <li class="section-touch-item">
+                  <a
+                    href="mailto:illonakorytko@yandex.ru"
+                    class="section-touch-link"
+                  >
+                    <i class="touch-link-icon fas fa-paper-plane"></i>
+                    <em class="touch-link-label">illonakorytko@yandex.ru</em>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="section-touch-box">
+              <h2 class="section-touch-title">Отправить мне сообщение</h2>
+              <form class="section-touch-form form_body" id="form" action="#">
+                <div class="touch-form-row">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Имя *"
+                    class="touch-form-field _req"
+                    required=""
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Почта *"
+                    class="touch-form-field _req _email"
+                    required=""
+                  />
+                </div>
+                <div class="touch-form-row">
+                  <input
+                    type="text"
+                    name="subject"
+                    placeholder="Тема *"
+                    class="touch-form-field _req"
+                    required=""
+                  />
+                </div>
+                <div class="touch-form-row">
+                  <textarea
+                    name="message"
+                    rows="7"
+                    placeholder="Написать сообщение"
+                    class="touch-form-field _req"
+                    required=""
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-secondary">
+                  Отправить сообщение
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--========= FOTTER =========-->
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-box">
+            <a href="index.html">
+              <div class="footer-logo">
+                <img
+                  class="footer-logo-icon"
+                  src="images/logo.svg"
+                  alt="logo"
+                />
+                <span class="footer-logo-name"
+                  >Психолог <br />
+                  Илона Корытко</span
+                >
+              </div>
+            </a>
+            <p class="footer-text">
+              С моей помощью девушки выходят на новый уровень жизни, находят
+              себя, создают счастливые и гармоничные отношения.
+            </p>
+            <p class="footer-text modify">
+              Пары и семьи учатся понимать друг друга, преодолевают семейные
+              кризисы, воспитывают счастливых детей.
+            </p>
+            <p class="footer-copyright-text">
+              © 2021. All Rights Reserved. Privacy Policy
+            </p>
+          </div>
+          <div class="footer-box box-modify">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="index.html#about">Обо мне</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="services.html">Услуги</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="blog.html">Блог</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="index.html#comments">Отзывы</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="footer-box modify">
+              <span class="footer-box-caption">Связаться со мной</span>
+              <a class="footer-box-number" href="tel:+79175666173"
+                >+79175666173
+              </a>
+              <a class="footer-box-email" href="mailto:illonakorytko@yandex.ru"
+                >illonakorytko@yandex.ru
+              </a>
+              <span class="footer-box-adress">Адрес</span>
+              <a
+                class="footer-box-location"
+                href="https://goo.gl/maps/weG51JRDqAxhU3bs7"
+                target="_blank"
+                >г.Москва, Россия, <br />
+                Страстной Бульвар, 4
+              </a>
+            </div>
+          </div>
+          <div class="footer-box box-hidden">
+            <span class="footer-box-caption">Связаться со мной</span>
+            <a class="footer-box-number" href="tel:+79175666173"
+              >+79175666173
+            </a>
+            <a class="footer-box-email" href="mailto:illonakorytko@yandex.ru"
+              >illonakorytko@yandex.ru
+            </a>
+            <span class="footer-box-adress">Адрес</span>
+            <a
+              class="footer-box-location"
+              href="https://goo.gl/maps/weG51JRDqAxhU3bs7"
+              target="_blank"
+              >г.Москва, Россия, <br />
+              Страстной Бульвар, 4
+            </a>
+          </div>
+          <div class="footer-box">
+            <ul class="footer-socials-list">
+              <li class="footer-socials-item">
+                <a
+                  href="https://instagram.com/ilona_psycholog?utm_medium=copy_link"
+                  class="footer-socials-link"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram-square"></i
+                ></a>
+              </li>
+              <li class="footer-socials-item">
+                <a
+                  href="https://vk.com/id188651398"
+                  class="footer-socials-link"
+                  target="_blank"
+                  ><i class="fa-brands fa-vk"></i
+                ></a>
+              </li>
+              <li class="footer-socials-item">
+                <a
+                  href="https://t.me/+AuRhffBvelFlNjYy"
+                  class="footer-socials-link"
+                  target="_blank"
+                  ><i class="fa-brands fa-telegram"></i
+                ></a>
+              </li>
+            </ul>
+            <a class="footer-scroll-top fas fa-arrow-down" href="#"></a>
+            <p class="footer-copyright-text modify">
+              © 2021. All Rights Reserved. Privacy Policy
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- MODAL WINDOW -->
+
+    <div class="md-modal" id="modal">
+      <header class="md-header">
+        <h3 class="md-title">
+          Запись на консультацию: <br />
+          (Watsap, Viber, Telegram) <br />
+          <span class="md-number">+79175666173</span>
+        </h3>
+        <i class="md-tree tree-left fab fa-pagelines"></i>
+        <i class="md-tree tree-right fab fa-pagelines"></i>
+      </header>
+      <div class="md-content">
+        <h3 class="md-title modify">Мои социальные сети:</h3>
+        <div class="md-socials">
+          <a
+            href=" https://instagram.com/ilona_psycholog?utm_medium=copy_link"
+            class="md-social-link"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram-square"></i>
+          </a>
+          <a
+            href="https://vk.com/id188651398"
+            class="md-social-link"
+            target="_blank"
+            ><i class="fa-brands fa-vk"></i
+          ></a>
+          <a
+            href="https://t.me/+AuRhffBvelFlNjYy"
+            class="md-social-link"
+            target="_blank"
+            ><i class="fa-brands fa-telegram"></i
+          ></a>
+        </div>
+        <h3 class="md-title modify">Электронная почта:</h3>
+        <a href="mailto:illonakorytko@yandex.ru" class="md-email-link"
+          >illonakorytko@yandex.ru</a
+        >
+        <button class="md-close" id="mdClose">Close me!</button>
+      </div>
+    </div>
+    <div class="md-overlay" id="modalOverlay"></div>
+
+    <!-- SCRIPTS -->
+
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/feedback.js"></script>
+  </body>
+</html>

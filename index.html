@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/aos.min.css" />
+    <link rel="stylesheet" href="styles/style.min.css" />
+  </head>
+  <body>
+    <!--========= SIDEBAR ========= -->
+
+    <aside class="sidebar">
+      <div class="header-burger-menu">
+        <div class="header-burger">
+          <span class="header-burger-line"></span>
+        </div>
+      </div>
+      <a href="#" class="sidebar-logo fas fa-circle"></a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item" id="item-hero">
+            <a href="#hero" class="nav-link fas fa-home"
+              ><span class="nav-link-text">home</span></a
+            >
+          </li>
+          <li class="nav-item" id="item-about">
+            <a href="#about" class="nav-link fas fa-user"
+              ><span class="nav-link-text">about</span></a
+            >
+          </li>
+          <li class="nav-item" id="item-resume">
+            <a href="#resume" class="nav-link fas fa-id-card"
+              ><span class="nav-link-text">resume</span></a
+            >
+          </li>
+          <li class="nav-item" id="item-portfolio">
+            <a href="#works" class="nav-link fas fa-briefcase"
+              ><span class="nav-link-text">portfolio</span></a
+            >
+          </li>
+          <li class="nav-item" id="item-contact">
+            <a href="#touch" class="nav-link fas fa-envelope"
+              ><span class="nav-link-text">contact</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <a href="#hero" class="scroll-top fas fa-chevron-up"></a>
+    </aside>
+
+    <!--========= SECTION-HERO =========-->
+
+    <main class="content">
+      <section class="section-hero" id="hero">
+        <div class="container">
+          <h1 class="section-hero-title">Vadym Gopko</h1>
+          <p class="section-hero-text">I am a Front-End Developer</p>
+          <ul class="section-hero-socials">
+            <li class="section-hero-item">
+              <a
+                href="https://www.instagram.com/vadimgopko/"
+                class="section-hero-link fa-brands fa-instagram"
+                target="_blank"
+              ></a>
+            </li>
+            <li class="section-hero-item">
+              <a
+                href="#"
+                class="section-hero-link fab fa-github"
+                target="_blank"
+              ></a>
+            </li>
+            <li class="section-hero-item">
+              <a
+                href="https://www.linkedin.com/in/vadym-gopko-28ab39238/"
+                class="section-hero-link fab fa-linkedin-in"
+                target="_blank"
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <a
+          href="#about"
+          class="section-hero-arrow fas fa-angle-double-down"
+        ></a>
+        <a href="ru/index.html" class="switch">
+          <span class="slider">RU</span>
+        </a>
+      </section>
+
+      <!--========= SECTION-ABOUT =========-->
+
+      <section class="section-about" id="about">
+        <div class="container">
+          <h2 class="section-title">
+            About <span class="title-modify">Me</span>
+          </h2>
+          <div class="section-about-content">
+            <div class="section-about-desc">
+              <p class="section-about-text">
+                <span class="about-text-modify default">Hello,</span>I am Vadym
+                Gopko, web developer from Odessa, Ukraine. I believe that every
+                business must have aesthetically pleasing, effective and
+                intuitive designed web sites/apps to help your business grow and
+                succeed. And I can help you achieve it.
+              </p>
+              <div class="section-about-actions">
+                <a
+                  href="images/resume-eng.pdf"
+                  download
+                  class="section-about-link"
+                  target="_blank"
+                  >Download CV</a
+                >
+                <a href="#touch" class="section-about-link">Hire Me</a>
+              </div>
+            </div>
+            <div class="section-about-avatar">
+              <img src="images/avatar.png" alt="Avatar" class="avatar-image" />
+            </div>
+          </div>
+          <div class="section-about-skills">
+            <h3 class="about-skills-caption">
+              Here Are <span class="about-text-modify">My Skills</span>
+            </h3>
+            <ul class="about-skills-list">
+              <li
+                class="about-skills-item"
+                data-aos="flip-left"
+                data-aos-duration="1300"
+              >
+                <a
+                  href="https://ru.wikipedia.org/wiki/HTML5"
+                  target="_blank"
+                  class="about-skills-link"
+                >
+                  <img
+                    src="images/html.svg"
+                    alt="HTML"
+                    class="about-skills-img"
+                  />
+                  <h4 class="about-skills-subtitle html">HTML5</h4>
+                </a>
+              </li>
+              <li
+                class="about-skills-item"
+                data-aos="flip-left"
+                data-aos-duration="1400"
+              >
+                <a
+                  href="https://ru.wikipedia.org/wiki/CSS"
+                  target="_blank"
+                  class="about-skills-link"
+                >
+                  <img
+                    src="images/css.svg"
+                    alt="CSS"
+                    class="about-skills-img"
+                  />
+                  <h4 class="about-skills-subtitle css">CSS3</h4>
+                </a>
+              </li>
+              <li
+                class="about-skills-item"
+                data-aos="flip-left"
+                data-aos-duration="1500"
+              >
+                <a
+                  href="https://ru.wikipedia.org/wiki/JavaScript"
+                  target="_blank"
+                  class="about-skills-link"
+                >
+                  <img
+                    src="images/js.svg"
+                    alt="JavaScript"
+                    class="about-skills-img"
+                  />
+                  <h4 class="about-skills-subtitle js">JavaScript</h4>
+                </a>
+              </li>
+              <li
+                class="about-skills-item"
+                data-aos="flip-left"
+                data-aos-duration="1600"
+              >
+                <a
+                  href="https://ru.wikipedia.org/wiki/Sass"
+                  target="_blank"
+                  class="about-skills-link"
+                >
+                  <img
+                    src="images/sass.svg"
+                    alt="SASS"
+                    class="about-skills-img"
+                  />
+                  <h4 class="about-skills-subtitle sass">SASS</h4>
+                </a>
+              </li>
+              <li
+                class="about-skills-item"
+                data-aos="flip-left"
+                data-aos-duration="1700"
+              >
+                <a
+                  href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
+                  target="_blank"
+                  class="about-skills-link"
+                >
+                  <img
+                    src="images/bootstrap.svg"
+                    alt="Bootstrap"
+                    class="about-skills-img"
+                  />
+                  <h4 class="about-skills-subtitle bootstrap">Bootstrap</h4>
+                </a>
+              </li>
+              <li
+                class="about-skills-item"
+                data-aos="flip-left"
+                data-aos-duration="1800"
+              >
+                <a
+                  href="https://ru.wikipedia.org/wiki/Gulp"
+                  target="_blank"
+                  class="about-skills-link"
+                >
+                  <img
+                    src="images/gulp.svg"
+                    alt="Gulp"
+                    class="about-skills-img"
+                  />
+                  <h4 class="about-skills-subtitle gulp">Gulp</h4>
+                </a>
+              </li>
+              <li
+                class="about-skills-item"
+                data-aos="flip-left"
+                data-aos-duration="1300"
+                data-aos-delay="350"
+              >
+                <a
+                  href="https://ru.wikipedia.org/wiki/Git"
+                  target="_blank"
+                  class="about-skills-link"
+                >
+                  <img
+                    src="images/git.svg"
+                    alt="Git"
+                    class="about-skills-img"
+                  />
+                  <h4 class="about-skills-subtitle git">Git</h4>
+                </a>
+              </li>
+              <li
+                class="about-skills-item"
+                data-aos="flip-left"
+                data-aos-duration="1400"
+                data-aos-delay="400"
+              >
+                <a
+                  href="https://ru.wikipedia.org/wiki/SVG"
+                  target="_blank"
+                  class="about-skills-link"
+                >
+                  <img
+                    src="images/svg.svg"
+                    alt="Svg"
+                    class="about-skills-img"
+                  />
+                  <h4 class="about-skills-subtitle svg">SVG</h4>
+                </a>
+              </li>
+              <li
+                class="about-skills-item"
+                data-aos="flip-left"
+                data-aos-duration="1500"
+                data-aos-delay="450"
+              >
+                <a
+                  href="https://ru.wikipedia.org/wiki/JQuery"
+                  target="_blank"
+                  class="about-skills-link"
+                >
+                  <img
+                    src="images/jquery.svg"
+                    alt="jQuery"
+                    class="about-skills-img"
+                  />
+                  <h4 class="about-skills-subtitle jquery">jQuery</h4>
+                </a>
+              </li>
+              <li
+                class="about-skills-item"
+                data-aos="flip-left"
+                data-aos-duration="1600"
+                data-aos-delay="500"
+              >
+                <a
+                  href="https://ru.wikipedia.org/wiki/Node.js"
+                  target="_blank"
+                  class="about-skills-link"
+                >
+                  <img
+                    src="images/nodejs.svg"
+                    alt="Node.js"
+                    class="about-skills-img"
+                  />
+                  <h4 class="about-skills-subtitle node">Node.js</h4>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--========= SECTION-RESUME =========-->
+
+      <section class="section-resume" id="resume">
+        <div class="container">
+          <h2 class="section-title">
+            My <span class="title-modify">Resume</span>
+          </h2>
+          <div class="section-resume-content">
+            <div class="section-resume-education">
+              <h3 class="resume-box-title">
+                <span class="education-title-icon fas fa-graduation-cap"></span
+                >Education
+              </h3>
+              <ul class="section-resume-box">
+                <li class="section-resume-item">
+                  <h4 class="section-resume-caption">Front-End Pro</h4>
+                  <p class="section-resume-subtitle">2021 | Hillel IT School</p>
+                  <p class="section-resume-text">
+                    As part of the course, I studied the principles of working
+                    with ES6, OOP, DOM, AJAX, Git, jQuery, REST API and Node.js.
+                  </p>
+                </li>
+                <li class="section-resume-item">
+                  <h4 class="section-resume-caption">Front-End Basic</h4>
+                  <p class="section-resume-subtitle">2021 | Hillel IT School</p>
+                  <p class="section-resume-text">
+                    As part of the course, I studied HTML and CSS, website
+                    layout and mobile adaptation, as well as SASS, Bootstrap,
+                    SVG and Gulp.
+                  </p>
+                </li>
+                <li class="section-resume-item">
+                  <h4 class="section-resume-caption">Legal specialist</h4>
+                  <p class="section-resume-subtitle">
+                    2007 - 2012 | I.I. Mechnikov Odesa National University
+                  </p>
+                  <p class="section-resume-text">
+                    Got a higher legal education and qualification of a lawyer.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="section-resume-experience">
+              <h3 class="resume-box-title">
+                <span class="education-title-icon fas fa-pen"></span>Experience
+              </h3>
+              <ul class="section-resume-box">
+                <li class="section-resume-item">
+                  <h4 class="section-resume-caption">Front-End Developer</h4>
+                  <p class="section-resume-subtitle">
+                    2022 - present | Freelance
+                  </p>
+                  <p class="section-resume-text">
+                    After a year of study, I continue to practice frontend
+                    skills, take orders from clients and making up websites.
+                  </p>
+                </li>
+                <li class="section-resume-item">
+                  <h4 class="section-resume-caption">Top manager</h4>
+                  <p class="section-resume-subtitle">
+                    2020 - 2021 | Interwindows, engineering company
+                  </p>
+                  <p class="section-resume-text">
+                    Presented the company's services, made commercial offers.
+                  </p>
+                </li>
+                <li class="section-resume-item">
+                  <h4 class="section-resume-caption">
+                    Vice-rector's assistant
+                  </h4>
+                  <p class="section-resume-subtitle">
+                    2014 - 2015 | I.I. Mechnikov Odesa National University
+                  </p>
+                  <p class="section-resume-text">
+                    Created student organizations, accepted appeals and
+                    organized management meetings.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--========= SECTION-WORKS =========-->
+
+      <section class="section-works" id="works">
+        <div class="container">
+          <h2 class="section-title">
+            My <span class="title-modify">Works</span>
+          </h2>
+          <ul class="section-works-list">
+            <li
+              class="section-works-item"
+              data-aos="fade-right"
+              data-aos-duration="1600"
+            >
+              <a
+                href="sites/Hospital/index.html"
+                class="section-works-link"
+                target="_blank"
+                ><img
+                  src="images/hospital.jpg"
+                  alt="hospital"
+                  class="section-works-poster"
+                />
+                <div class="works-link-caption">
+                  <h3 class="works-link-subtitle">Hospital</h3>
+                </div>
+              </a>
+            </li>
+            <li
+              class="section-works-item"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+            >
+              <a
+                href="sites/NaturalFood/index.html"
+                class="section-works-link"
+                target="_blank"
+                ><img
+                  src="images/food.jpg"
+                  alt="food"
+                  class="section-works-poster"
+                />
+                <div class="works-link-caption">
+                  <h3 class="works-link-subtitle">Natural Food</h3>
+                </div></a
+              >
+            </li>
+            <li
+              class="section-works-item"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
+              <a
+                href="sites/Meditation/index.html"
+                class="section-works-link"
+                target="_blank"
+                ><img
+                  src="images/meditation.jpg"
+                  alt="meditation"
+                  class="section-works-poster"
+                />
+                <div class="works-link-caption">
+                  <h3 class="works-link-subtitle">Meditation</h3>
+                </div></a
+              >
+            </li>
+            <li
+              class="section-works-item"
+              data-aos="fade-right"
+              data-aos-duration="1800"
+            >
+              <a
+                href="sites/Psychologist/index.html"
+                class="section-works-link"
+                target="_blank"
+                ><img
+                  src="images/psychologist.webp"
+                  alt="psychologist"
+                  class="section-works-poster"
+                />
+                <div class="works-link-caption">
+                  <h3 class="works-link-subtitle">Psychologist</h3>
+                </div></a
+              >
+            </li>
+            <li
+              class="section-works-item"
+              data-aos="fade-right"
+              data-aos-duration="1400"
+            >
+              <a
+                href="sites/Coffee/index.html"
+                class="section-works-link"
+                target="_blank"
+                ><img
+                  src="images/coffee.jpg"
+                  alt="coffee"
+                  class="section-works-poster"
+                />
+                <div class="works-link-caption">
+                  <h3 class="works-link-subtitle">Coffee</h3>
+                </div></a
+              >
+            </li>
+            <li
+              class="section-works-item"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <a
+                href="sites/Mattrasses/index.html"
+                class="section-works-link"
+                target="_blank"
+                ><img
+                  src="images/matr.jpg"
+                  alt="mattrasses"
+                  class="section-works-poster"
+                />
+                <div class="works-link-caption">
+                  <h3 class="works-link-subtitle">Mattrasses</h3>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--========= SECTION-TOUCH =========-->
+
+      <section class="section-touch" id="touch">
+        <div class="container">
+          <h2 class="section-title">
+            Get <span class="title-modify">In Touch</span>
+          </h2>
+          <div class="section-touch-content">
+            <ul class="section-touch-list">
+              <li class="section-touch-item">
+                <a
+                  href="https://goo.gl/maps/nYJg6F7gnnaJXKxr6"
+                  target="_blank"
+                  class="section-touch-link"
+                >
+                  <i class="touch-link-icon fas fa-map-marker-alt"></i>
+                  <em class="touch-link-label">Odessa, Ukraine</em>
+                </a>
+              </li>
+              <li class="section-touch-item">
+                <a href="tel:+380734986312" class="section-touch-link">
+                  <i class="touch-link-icon fas fa-phone-alt"> </i>
+                  <em class="touch-link-label">(+38) 073-498-63-12</em>
+                </a>
+              </li>
+              <li class="section-touch-item">
+                <a
+                  href="mailto:gopko.vadim@gmail.com"
+                  class="section-touch-link"
+                >
+                  <i class="touch-link-icon fas fa-paper-plane"></i>
+                  <em class="touch-link-label">gopko.vadim@gmail.com</em>
+                </a>
+              </li>
+            </ul>
+            <form action="#" class="section-touch-form form_body" id="form">
+              <div class="touch-form-row">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name *"
+                  class="touch-form-field _req"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email *"
+                  class="touch-form-field _req _email"
+                  required
+                />
+              </div>
+              <div class="touch-form-row">
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject *"
+                  class="touch-form-field _req"
+                  required
+                />
+              </div>
+              <div class="touch-form-row">
+                <textarea
+                  name="message"
+                  rows="7"
+                  placeholder="Write message"
+                  class="touch-form-field _req"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--========= SCRIPTS =========-->
+
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/feedback.min.js"></script>
+    <script src="scripts/aos.min.js"></script>
+    <script src="scripts/vanilla-tilt.min.js"></script>
+    <script src="scripts/main.min.js"></script>
+  </body>
+</html>

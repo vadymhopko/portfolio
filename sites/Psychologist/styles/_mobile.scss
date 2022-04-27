@@ -1,0 +1,526 @@
+////////////------WIDTH 1024------////////////
+
+@media only screen and (max-width: 1024px) {
+  //HEADER
+  .header-topbar .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header-nav {
+    justify-content: center;
+    &-link {
+      font-size: clamp(18px, 2vw, 20px);
+    }
+  }
+  .header-bottombar {
+    z-index: 50;
+  }
+  .btn-primary.modify {
+    font-size: clamp(16px, 2vw, 20px);
+  }
+
+  //SECTION-HERO
+
+  .section-hero-box {
+    right: 0;
+    width: clamp(430px, 40vw, 486px);
+  }
+  .section-hero-text {
+    display: flex;
+    font-size: 16px;
+    margin: 8px 0 0 8px;
+  }
+
+  //SECTION-SERVICES
+
+  .section-services-title {
+    margin: 0 0 20px 0;
+    font-size: clamp(30px, 4vw, 38px);
+  }
+  .section-services-text {
+    margin: 0 0 20px 0;
+    font-size: clamp(16px, 1.85vw, 17px);
+  }
+  .section-services-number {
+    font-size: 80px;
+    right: clamp(70%, 33vw, 93%);
+    top: 32%;
+  }
+  .section-services-tree {
+    display: none;
+  }
+  .section-services-info .info-caption {
+    font-size: clamp(30px, 3.5vw, 42px);
+    margin-left: 20px;
+    &.modify {
+      margin: 0 32px 0 28px;
+    }
+  }
+
+  //SECTION DIPLOMAS
+
+  .section-diplomas {
+    padding: 20px 0 80px 0;
+    &-box {
+      max-width: 360px;
+    }
+  }
+
+  //FOTTER
+
+  .footer {
+    padding: 40px 0;
+  }
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-box {
+    max-width: 400px;
+    &:nth-child(1) {
+      align-items: center;
+    }
+  }
+  .footer-box:not(:last-of-type) {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+  .footer-box.box-modify {
+    flex-direction: row;
+    max-width: 500px;
+    gap: 200px;
+  }
+  .footer-box.box-hidden {
+    display: none;
+  }
+  .footer-box.modify {
+    display: flex;
+  }
+  .footer-copyright-text {
+    display: none;
+    &.modify {
+      display: flex;
+    }
+  }
+}
+
+////////////------WIDTH 768------////////////
+
+@media only screen and (max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
+  body::-webkit-scrollbar {
+    width: 0;
+  }
+  .btn-primary.modify {
+    display: none;
+  }
+
+  //HEADER
+  .header .header-burger-menu {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    // background: #686498bd;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .header .header-burger {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    z-index: 4;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    &-line {
+      content: "";
+      // background-color: #21243d;
+      background-color: #686498;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      top: 8px;
+      border-radius: 1px;
+      &::before,
+      &::after {
+        content: "";
+        // background-color: #21243d;
+        background-color: #686498;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        transition: all 0.25s ease-in-out;
+        color: #fff;
+        border-radius: 1px;
+      }
+      &::before {
+        top: 7px;
+      }
+      &::after {
+        bottom: 7px;
+      }
+    }
+  }
+  .header-topbar {
+    margin-top: 60px;
+  }
+  .header-bottombar {
+    padding: 12px 0;
+    min-height: 60px;
+    position: fixed;
+    background-color: #f8f9fa;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // background-color: #686498;
+    // border-bottom: 1px solid #686498;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  }
+  .header-nav {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: radial-gradient(
+      circle at 50% -20.71%,
+      #beb9ff 0,
+      #9d9df2 50%,
+      #7a82de 100%
+    );
+    transition: all 0.3s ease;
+    transform: translateY(0%);
+    height: 100%;
+    overflow: auto;
+    &.active {
+      transform: translateY(-100%);
+      & ~ .header-burger-menu .header-burger-line {
+        background-color: transparent;
+      }
+      & ~ .header-burger-menu .header-burger-line::before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+      & ~ .header-burger-menu .header-burger-line::after {
+        bottom: 0;
+        transform: rotate(-45deg);
+      }
+    }
+    &-list {
+      flex-direction: column;
+      gap: 38px;
+      align-items: center;
+    }
+    &-item {
+      margin-right: 0;
+      &:nth-child(3) i {
+        display: flex;
+        padding: 4px 0 4px 7px;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &-link {
+      font-size: 24px;
+    }
+    & .btn-down {
+      display: none;
+    }
+  }
+  .header-droplist::before {
+    top: -23%;
+    right: 29.5%;
+  }
+  .header-nav-link:hover ~ .header-droplist {
+    display: none;
+  }
+  //SECTION-HERO
+
+  .section-hero {
+    padding: 120px 0;
+    &-text {
+      margin: 6px 0 0 0;
+    }
+    &-list {
+      margin: 0px 0 28px 0;
+    }
+  }
+  .section-hero .container {
+    justify-content: center;
+  }
+  .section-hero-box {
+    right: -27%;
+    opacity: 0.15;
+    width: clamp(380px, 40vw, 486px);
+  }
+  .section-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(0);
+  }
+  .section-hero-title {
+    text-align: center;
+  }
+
+  //MODAL WINDOW
+
+  .md-tree {
+    font-size: clamp(60px, 18vw, 120px);
+    &.tree-left {
+      top: 20%;
+    }
+    &.tree-right {
+      top: 20%;
+    }
+  }
+  .md-title.modify {
+    font-size: clamp(18px, 4vw, 22px);
+  }
+  .md-social-link {
+    font-size: clamp(40px, 8vw, 44px);
+  }
+
+  //SECTION-ABOUT
+
+  .section-about .container {
+    gap: 50px;
+    flex-direction: column;
+  }
+  .section-about-box {
+    margin-right: 0;
+    align-self: initial;
+    max-width: 475px;
+  }
+  .section-about-title {
+    text-align: center;
+  }
+
+  //SECTION SERVICES
+
+  .section-services {
+    padding: 50px 0;
+    background: #e3e2ec;
+    &.modify {
+      background: #e3ebf4;
+    }
+    &.bgModify {
+      padding: 30px 0 60px 0;
+    }
+    &-list {
+      font-size: clamp(18px, 4.5vw, 19px);
+    }
+  }
+  .section-services-content {
+    flex-direction: column;
+  }
+  .section-services-box:nth-child(2) {
+    margin-left: 0;
+  }
+  .section-services-number {
+    position: initial;
+    margin-bottom: 10px;
+    color: #8d5197;
+    font-size: 30px;
+    justify-content: center;
+    font-weight: normal;
+    letter-spacing: 0;
+  }
+  .section-services-box.rev {
+    order: 2;
+  }
+  .section-services-link.modify {
+    margin-top: 30px;
+    font-size: clamp(8px, 3.5vw, 18px);
+  }
+  .section-services-title.modify {
+    font-size: clamp(25px, 7vw, 32px);
+  }
+  .section-services-price {
+    font-size: clamp(32px, 9vw, 40px);
+  }
+  .section-services-title {
+    margin: 16px 0 16px 0;
+    &.modify {
+      margin: 0 0 16px 0;
+    }
+  }
+  .section-services-box.mr-modify {
+    margin-right: 0;
+    width: 100%;
+  }
+  .section-services-box.modify {
+    width: 100%;
+    &::after {
+      top: -2%;
+      left: 2%;
+    }
+  }
+  .section-services-info {
+    & .info-box {
+      flex-direction: column;
+    }
+    & .info-caption {
+      margin: 0 0 30px 0;
+      &.modify {
+        margin: 0 0 30px 0;
+      }
+    }
+    & .info-list:first-of-type {
+      margin-right: 0;
+    }
+    & .info-list {
+      padding: 0;
+      background: none;
+      font-size: clamp(16px, 3.5vw, 19px);
+    }
+    & .info-list.modify {
+      width: 100%;
+    }
+  }
+  #modifyBtn {
+    display: flex;
+    padding: 12px 24px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  //SECTION BIOGRAPHY
+
+  .section-biography {
+    background: linear-gradient(to right, #503a87f0, #503a87f0),
+      url(../images/biog.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(12%);
+  }
+  .section-biography .container {
+    justify-content: center;
+  }
+  .section-biography::before {
+    display: none;
+  }
+  .section-biography-content {
+    flex: 1 1 50%;
+    padding-right: 0;
+  }
+
+  //SECTION QUALIFICATION
+
+  .section-qualification-content {
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .section-qualification-box:not(:last-of-type) {
+    margin-right: 0;
+  }
+
+  //SECTION BLOG
+
+  .section-blog {
+    padding: 80px 0;
+    &-content {
+      grid-template-columns: repeat(1, minmax(240px, 727px));
+    }
+    &.modify {
+      padding: 20px 0 80px 0;
+    }
+  }
+
+  .section-blog-hero.blog-touch {
+    min-height: 420px;
+  }
+
+  //SECTION COMMENTS
+
+  .section-comments {
+    padding: 40px 0 80px 0;
+  }
+  .section-comments .container {
+    padding: 0 30px;
+  }
+  .section-comments-title {
+    text-align: center;
+  }
+  .section-comments .comments-content {
+    justify-content: center;
+  }
+  // & .comments-content-item {
+  //   // max-width: 512px;
+  // }
+
+  //SECTION DIPLOMAS
+
+  .section-diplomas-box {
+    max-width: 490px;
+  }
+  .section-diplomas-pic {
+    &.modify {
+      max-height: 418px;
+    }
+  }
+
+  //SECTION-TOUCH
+
+  .section-touch-content {
+    flex-direction: column;
+  }
+  .section-touch-title {
+    font-size: clamp(19px, 5vw, 30px);
+    white-space: initial;
+  }
+  .section-touch .touch-link-label {
+    font-size: clamp(15px, 5vw, 17px);
+  }
+
+  //FOTTER
+
+  .footer {
+    margin-bottom: 0 !important;
+  }
+  .footer-text.modify {
+    margin: 0 0 0 0;
+  }
+  .footer-box.box-modify {
+    flex-direction: column;
+    gap: 60px;
+    align-self: flex-start;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  //MODAL WINDOW
+
+  .md-tree {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .md-modal.md-active {
+    transform: translate(-50%, -50%) scale(0.75);
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .header-nav-list {
+    gap: 12px;
+  }
+  .header-nav-link {
+    font-size: 22px;
+  }
+}
