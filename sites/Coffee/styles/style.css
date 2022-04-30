@@ -506,7 +506,6 @@ li {
 }
 
 .section-offer .offer-card-number {
-  padding: 13px 21px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -516,17 +515,39 @@ li {
   font-size: 24px;
   font-weight: 500;
   line-height: 31px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 57px;
+  height: 55px;
+}
+
+.section-offer .mark-plus {
+  max-width: 55px;
+  max-height: 31px;
+}
+
+.section-offer .mark-minus {
+  max-width: 55px;
+  max-height: 24px;
 }
 
 .section-offer .offer-card-mark.plus {
-  padding: 9px 22px 9px 22px;
+  padding: 9px 21px 9px 22px;
   border-bottom: 1px solid black;
   cursor: pointer;
 }
 
 .section-offer .offer-card-mark.minus {
-  padding: 7px 22px 9px 22px;
+  padding: 13px 21px 9px 22px;
   cursor: pointer;
+}
+
+.section-offer .offer-card-mark:hover {
+  background: #fa9384;
 }
 
 .section-gallery {

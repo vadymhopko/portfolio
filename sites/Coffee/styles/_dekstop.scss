@@ -350,7 +350,6 @@ li {
     border-radius: 2px;
   }
   .offer-card-number {
-    padding: 13px 21px;
     display: inline-flex;
     border-right: 1px solid black;
     font-family: "Roboto", sans-serif;
@@ -358,16 +357,31 @@ li {
     font-size: 24px;
     font-weight: 500;
     line-height: 31px;
+    align-items: center;
+    justify-content: center;
+    width: 57px;
+    height: 55px;
+  }
+  .mark-plus {
+    max-width: 55px;
+    max-height: 31px;
+  }
+  .mark-minus {
+    max-width: 55px;
+    max-height: 24px;
   }
   .offer-card-mark {
     &.plus {
-      padding: 9px 22px 9px 22px;
+      padding: 9px 21px 9px 22px;
       border-bottom: 1px solid black;
       cursor: pointer;
     }
     &.minus {
-      padding: 7px 22px 9px 22px;
+      padding: 13px 21px 9px 22px;
       cursor: pointer;
+    }
+    &:hover {
+      background: #fa9384;
     }
   }
 }
