@@ -567,7 +567,11 @@
                 </a>
               </li>
             </ul>
-            <form action="#" class="section-touch-form form_body" id="form">
+            <form method="POST" 
+                  action="https://docs.google.com/forms/d/1pTz-760-IEOUP_kn-cmNZZDroWIVyfemPlTTzhBfFNs" 
+                  class="section-touch-form form_body" 
+                  id="form"
+                  onsubmit="return window.submitGoogleForm(this);">
               <div class="touch-form-row">
                 <input
                   type="text"
@@ -611,7 +615,7 @@
     <!--========= SCRIPTS =========-->
 
     <script src="scripts/jquery-3.6.0.min.js"></script>
-    <script src="scripts/feedback.min.js"></script>
+    <script src="scripts/google-form.js"></script>
     <script src="scripts/aos.min.js"></script>
     <script src="scripts/vanilla-tilt.min.js"></script>
     <script src="scripts/main.min.js"></script>
