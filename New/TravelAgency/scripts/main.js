@@ -1,10 +1,26 @@
-// const hamburger = document.querySelector(".hamburger");
-// const nav = document.querySelector(".header-nav");
+//HAMBURGER
 
-// hamburger.addEventListener("click", () => {
-//   hamburger.classList.toggle("active");
-//   nav.classList.toggle("show");
-// });
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".header-nav");
+const body = document.querySelector("body");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  nav.classList.toggle("show");
+  body.classList.toggle("lock");
+});
+
+const navLink = document.querySelectorAll(".header-nav-link");
+
+for (i = 0; i < navLink.length; i++) {
+  navLink[i].addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    nav.classList.remove("show");
+    body.classList.remove("lock");
+  });
+}
+
+//FORM-TABS
 
 const formTab = document.querySelectorAll(".form-tab");
 
