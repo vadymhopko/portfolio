@@ -1,31 +1,47 @@
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Bold.woff2") format("woff2");
+  font-family: "Caveat";
+  src: url("../fonts/Caveat-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../fonts/Caveat-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: fallback;
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
+  font-display: fallback;
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Regular.woff2") format("woff2");
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: fallback;
 }
 
 @font-face {
-  font-family: "Quick Kiss Personal Use";
-  src: url("../fonts/QuickKissPersonalUse.woff2") format("woff2");
-  font-weight: normal;
+  font-family: "Inter";
+  src: url("../fonts/Inter-Thin.woff2") format("woff2");
+  font-weight: 100;
   font-style: normal;
-  font-display: swap;
+  font-display: fallback;
 }

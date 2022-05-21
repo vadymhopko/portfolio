@@ -1,13 +1,14 @@
 ///COLORS///
 
-$primaryTextColor: #fff;
-$primaryBgColor: #fff;
-$secondaryColor: #181818;
-$btnBgColor: #ffc814;
-$btnPrimaryTextColor: #1f3347;
-$btnSecondaryTextColor: #22283c;
+$primaryBg: #0d2742;
+$secondaryBg: #102f50;
+$primaryTextColor: #fdfdfd;
+$secondaryTextColor: #fff;
+$primaryBtnBg: #d19b52; //фон кнопки
+$primaryBtnBgHover: #7f9691; //фон наведения на кнопку
+$NavLinkColorHover: #d19b52; //цвет наведения на ссылки меню
 
 ///FONTS///
 
-$primaryFont: "Poppins", sans-serif;
-$secondaryFont: "Quick Kiss Personal Use", sans-serif;
+$primaryFont: "Inter", sans-serif;
+$secondaryFont: "Caveat", cursive;
